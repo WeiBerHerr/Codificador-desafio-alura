@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html> 
+  <head>
+<link rel="stylesheet" href="style.css">
+
+  </head>
+<body id="bod"> 
+  <h1>Requisitos</h1>
+  
+    
+  <h4>  - Debe funcionar solo con letras minúsculas</h4> 
+    <h4>   - No deben ser utilizados letras con acentos ni caracteres especiales</h4> 
+    <h4> - Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.</h4> 
+  </h4> 
+  
+ <div id="texts">
+  <input type="text" id="domTextElement" > 
+  <p id="valueInput"></p> 
+</div>
+  <div id="but">
+  <button type="button"  onclick="getValueInput()"> 
+      Encriptar 
+  </button> 
+  <button type="button"  onclick="getValueInput1()"> 
+    Desencriptar
+</button> 
+<button type="button"  onclick="getValueInput2()"> 
+  Copiar
+</button> 
+</div>
+  
+  
+    
+  </body>
+
+  <script> 
+
+    const getValueInput = () =>{
+      let inputValue = document.getElementById("domTextElement").value; 
+        let rep1 = inputValue.replace(/e/g, "enter")
+        let rep2 = rep1.replace(/i/g, "imes");
+        let rep3 = rep2.replace(/a/g, "ai");
+        let rep4 = rep3.replace(/o/g, "ober");
+        let rep5 = rep3.replace(/u/g, "ufat");
+
+      document.getElementById("valueInput").innerHTML = rep5; 
+    }
+    const getValueInput1 = () =>{
+      let inputValue = document.getElementById("domTextElement").value; 
+        let rep1 = inputValue.replace(/enter/g, "e");
+        let rep2 = rep1.replace(/imes/g, "i");
+        let rep3 = rep2.replace(/ai/g, "a");
+        let rep4 = rep3.replace(/ober/g, "o");
+        let rep5 = rep4.replace(/ufat/g, "u");
+
+      document.getElementById("valueInput").innerHTML = rep5; 
+    }
+ 
+  </script> 
+</body> 
+  
+</html>

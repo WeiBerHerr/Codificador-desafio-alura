@@ -1,0 +1,45 @@
+ body {
+     background-color: gainsboro;
+     height: fit-content;
+     width: fit-content;
+ }
+ #texts {
+    width: 520px;
+    display: block;
+
+ }
+ input {
+     
+    border-radius: 25px;
+    border: 2px solid gray;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    float: left;
+    text-align: start;
+    vertical-align: super;
+
+ }
+
+ input[type=text]
+ {
+    
+    vertical-align: super;
+ }
+ p {
+     margin-top: 0px;
+     margin-left: 20px;
+    border-radius: 25px;
+    border: 2px solid gray;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    float: right;
+    background-color: white;
+    overflow: auto;
+   
+  }
+  #but {
+   float: right;
+
+  }
